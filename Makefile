@@ -1,3 +1,6 @@
+cli:
+	go build -mod vendor -o bin/lookup cmd/lookup/main.go
+
 apache-lookup-table:
 	curl -s -o tables/apache.txt 'https://svn.apache.org/viewvc/httpd/httpd/branches/2.2.x/docs/conf/mime.types?view=co'
 
